@@ -7,10 +7,12 @@ const headerStyles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '1rem 2rem',
-    backgroundColor: '#ffffff',
+    padding: '0.6rem 2rem',
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
     color: '#111827',
-    boxShadow: '0 2px 8px rgba(15, 23, 42, 0.08)',
+    boxShadow: '0 1px 6px rgba(15, 23, 42, 0.05)',
+    backdropFilter: 'blur(12px)',
+    WebkitBackdropFilter: 'blur(12px)',
     position: 'sticky',
     top: 0,
     zIndex: 1000,
@@ -77,8 +79,7 @@ function Header() {
       <div style={headerStyles.brand}>
         <img src={logo} alt="WALSE Tech logo" style={headerStyles.logo} />
         <div style={headerStyles.titleBlock}>
-          <span style={headerStyles.title}>WALSE Tech</span>
-          <span style={headerStyles.subtitle}>SAP Supply Chain Consulting</span>
+         
         </div>
       </div>
       <nav style={headerStyles.nav}>
